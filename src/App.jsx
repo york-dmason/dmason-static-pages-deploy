@@ -4,6 +4,10 @@ import './App.css'
 function App() {
   const [showText, setShowText] = useState(false)
 
+  useEffect(() => {
+    setShowText(true)
+  }, [])
+
   return (
     <div className="app-container">
       {showText && (
