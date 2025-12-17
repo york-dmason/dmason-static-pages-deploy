@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Next Steps
+NEXT_STEPS.md
+
+# Environment Variables
+.env
