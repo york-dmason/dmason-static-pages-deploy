@@ -39,30 +39,30 @@ Before begining ensure to have the following:
 - **npm** version 9.x or higher (comes with Node.js 20)
 
 To check your versions:
-\`\`\`bash
+```bash
 node --version
 npm --version
-\`\`\`
+```
 
 ## Getting Started
 
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/york-dmason/dmason-static-pages-deploy.git
 cd dmason-static-pages-deploy
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 The application will be available at `http://localhost:5173` (or the next available port).
 
@@ -83,18 +83,19 @@ The application will be available at `http://localhost:5173` (or the next availa
 **Deployed Site:** [https://york-dmason.github.io/dmason-static-pages-deploy/](https://york-dmason.github.io/dmason-static-pages-deploy/)
 
 ### How Deployment Works
+Update in progress
 
 ### Base Path Config
-
+Update in progress
 
 ## Testing
 
 This project uses Vitest for unit testing. Tests are located alongside their source files with the `.test.ts` extension.
 
 Run tests:
-\`\`\`bash
+```bash
 npm run test
-\`\`\`
+```
 
 The calculator utility (`src/utils/calculator.ts`) includes comprehensive tests covering:
 - All four arithmetic operations
@@ -107,9 +108,9 @@ The calculator utility (`src/utils/calculator.ts`) includes comprehensive tests 
 Making Contributions:
 
 1. **Fork the repository** and create a new branch from `main`
-   \`\`\`bash
+   ```bash
    git checkout -b feature/your-feature-name
-   \`\`\`
+   ```
 
 2. **Make your changes** following the project's code style:
    - Write TypeScript with strict typing
