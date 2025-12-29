@@ -1,5 +1,7 @@
 # CI/CD Testing Suite For Calculator App
 
+[![CodeQL Advanced](https://github.com/york-dmason/dmason-static-pages-deploy/actions/workflows/codeql.yml/badge.svg)](https://github.com/york-dmason/dmason-static-pages-deploy/actions/workflows/codeql.yml)
+[![Tests](https://github.com/york-dmason/dmason-static-pages-deploy/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/york-dmason/dmason-static-pages-deploy/actions/workflows/deploy-pages.yml)
 
 
 ## Contents
