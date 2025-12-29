@@ -37,8 +37,8 @@ describe('calculate', () => {
     describe('edge cases', () => {
         it('should handle division by zero', () => {
             const result = calculate(2, 0, '/');
-            expect(result.result).toBe(Infinity);
-            expect(result.error).toBeNull();
+            expect(result.result).toBeNull();
+            expect(result.error).toBe('Cannot divide by zero');
         });
 
         it('should handle very large numbers', () => {
