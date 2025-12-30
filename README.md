@@ -13,6 +13,7 @@
 - [Project Structure](#project-structure)
 - [Deployment](#deployment)
 - [Testing](#testing)
+- [Git Hooks](#git-hooks)
 - [Troubleshooting](#troubleshooting)
 
 ## Project Description
@@ -110,6 +111,22 @@ The calculator utility (`src/utils/calculator.ts`) includes comprehensive tests 
 - Division by zero handling
 - Invalid operation handling
 
+## Git Hooks
+
+This project uses [Husky](https://typicode.github.io/husky/) to automatically run quality checks before commits and pushes:
+
+- **Pre-commit**: Runs `lint` and `format:check` to catch formatting and linting issues before committing
+- **Pre-push**: Runs `typecheck`, `lint`, and `test` to ensure code quality before pushing to remote
+
+These hooks help catch issues locally before they reach CI, saving time and keeping the codebase clean.
+
+### Bypassing Hooks (Not Recommended)
+
+If you need to bypass hooks in an emergency (not recommended for regular use):
+```bash
+git commit --no-verify  # Skip pre-commit hook
+git push --no-verify    # Skip pre-push hook
+```
 
 **Notes**
 
