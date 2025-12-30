@@ -12,11 +12,7 @@ export interface CalculatorResult {
  * @param operation - Operation to perform
  * @returns Result object with result or error
  */
-export function calculate(
-  a: number,
-  b: number,
-  operation: Operation
-): CalculatorResult {
+export function calculate(a: number, b: number, operation: Operation): CalculatorResult {
   if (operation === '/' && b === 0) {
     return {
       result: null,

@@ -58,11 +58,7 @@ function App() {
           </button>
         </div>
         {error && <div style={{ color: 'red' }}>{error}</div>}
-        {result !== null && !error && (
-          <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-            Result: {result}
-          </div>
-        )}
+        {result !== null && !error && <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Result: {result}</div>}
       </div>
     </div>
   );

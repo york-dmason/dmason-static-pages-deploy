@@ -34,6 +34,12 @@ The app is a four-function calculator - and supports basic arithmetic operations
 - **ESLint** ^9.39.1 - Code linting
 - **jsdom** ^27.3.0 - DOM simulation for testing
 
+**Package Dependencies**
+Setting up ESLint + Prettier
+```bash
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript-eslint prettier eslint-config-prettier eslint-plugin-prettier
+```
+
 ## Prerequisites
 
 Before begining ensure to have the following:
