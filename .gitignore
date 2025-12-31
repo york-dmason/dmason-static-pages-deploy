@@ -28,3 +28,8 @@ NEXT_STEPS.md
 
 # Environment Variables
 .env
+
+# Cypress
+cypress/screenshots
+cypress/videos 
+cypress/downloads
