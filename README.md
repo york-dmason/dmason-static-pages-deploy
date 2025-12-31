@@ -32,6 +32,7 @@ The app is a four-function calculator - and supports basic arithmetic operations
 - **TypeScript** ^5.9.3 - Type safety
 - **Vite** ^7.2.4 - Build tool and dev server
 - **Vitest** ^4.0.16 - Unit testing framework
+- **Cypress** ^15.8.1 - End-to-end testing framework
 - **ESLint** ^9.39.1 - Code linting
 - **jsdom** ^27.3.0 - DOM simulation for testing
 
@@ -83,6 +84,9 @@ The application will be available at `http://localhost:5173` (or the next availa
 | `npm run build` | Creates an optimized production build in the `dist/` directory |
 | `npm run preview` | Previews the production build locally |
 | `npm run test` | Runs all unit tests using Vitest |
+| `npm run test:e2e` | Runs all end-to-end tests using Cypress (headless mode) |
+| `npm run cypress:open` | Opens Cypress Test Runner (interactive mode) |
+| `npm run cypress:run` | Runs Cypress tests in headless mode |
 | `npm run lint` | Runs ESLint to check for code quality issues |
 | `npm run typecheck` | Runs TypeScript compiler to check for type errors without emitting files |
 
@@ -99,17 +103,40 @@ Update in progress
 
 ## Testing
 
-This project uses Vitest for unit testing. Tests are located alongside their source files with the `.test.ts` extension.
+This project uses Vitest for unit testing and Cypress for end-to-end testing.
 
-Run tests:
-```bash
+### Unit Tests
+Tests are located alongside their source files with the `.test.ts` extension.
+
+Run unit tests:
 npm run test
-```
-
 The calculator utility (`src/utils/calculator.ts`) includes comprehensive tests covering:
 - All four arithmetic operations
 - Division by zero handling
 - Invalid operation handling
+
+### End-to-End Tests
+E2E tests are located in `cypress/e2e/` and test the full application in a browser environment.
+
+Run E2E tests:h
+# Run in headless mode (CI)
+npm run test:e2e
+
+# Open Cypress Test Runner (interactive)
+npm run cypress:open
+
+# Run Cypress directly
+npm run cypress:runThe E2E test suite (`cypress/e2e/calculator.cy.ts`) covers:
+- Calculator UI loads correctly
+- All four operations work (add, subtract, multiply, divide)
+- Division by zero error handling
+- Input validation
+- Result display
+- Decimal and negative number handling
+
+**Note:** Before running E2E tests, make sure the development server is running:sh
+npm run devThen in another terminal, run:
+npm run cypress:open
 
 ## Git Hooks
 
